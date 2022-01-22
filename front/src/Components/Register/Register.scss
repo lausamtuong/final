@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display:flex;
+    justify-content:space-around;
+    background: linear-gradient(to left top, red, black);;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.register{
+    background: #fff;
+    width: 400px;
+    display:flex;
+    flex-direction: column;
+   
+    padding:20px 40px;
+    border-radius: 12px;
+}
+.btn{
+    margin-bottom: 20px;
+    outline: none;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    border:none;
+    background: red;
+    color:yellow;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px #ff0000;
+    cursor: pointer;
+    &:hover{
+        opacity:0.9;
+    }
+    animation: hot 0.2s linear infinite ;
+}
+.error_msg{
+    color:red;
+    margin-bottom: 10px;
+   
+}
+/* You can remove these code below*/
+:root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+  }*{box-sizing:border-box;}input,button,textarea{border:0;outline:none;}
+  /* Main code */
+  
+          .double-loading {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top:40%;
+            left:45%;
+          }
+          .double-loading .c1 {
+            width: 100%;
+            height: 100%;
+            border: 5px solid #6a5af9;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-radius: 100rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: c1 1s infinite linear;
+          }
+          .double-loading .c2 {
+            width: 50%;
+            height: 50%;
+            border: 5px solid #6a5af9;
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
+            border-radius: 100rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: c2 1s infinite linear;
+          }
+          @keyframes c1 {
+            to {
+              transform: translate(-50%, -50%) rotate(360deg);
+            }
+          }
+          @keyframes c2 {
+            to {
+              transform: translate(-50%, -50%) rotate(-360deg);
+            }
+          }
+@keyframes hot{
+  0% {transform:translateY(-3px)}
+  50%{transform:translateY(0)}
+  100%{transform:translateY(3px)}
+
+}
+.loading{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #eee;
+    opacity: 0.5;
+}

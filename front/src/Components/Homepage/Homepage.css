@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  background: -webkit-gradient(linear, right bottom, left top, from(red), to(black));
+  background: linear-gradient(to left top, red, black);
+}
+
+.mualan img {
+  height: 340px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.wrap {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 1px solid c-blue;
+  font-size: 30px;
+  border-radius: 12px;
+  background-color: red;
+  color: yellow;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid;
+}
+
+.color {
+  color: rgb(142, 168, 247);
+}
+/*# sourceMappingURL=Homepage.css.map */
