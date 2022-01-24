@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+.react-audio-player{
+  position: absolute;
+  visibility: hidden;
+}

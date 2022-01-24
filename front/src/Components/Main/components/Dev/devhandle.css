@@ -1,0 +1,76 @@
+.btn-shake button{
+    border:none;
+    outline:none;
+
+    width: 200px;
+    height: 100px;
+    border-radius: 12px;
+    background: cornflowerblue;
+    color:#fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-shake button:hover{
+    box-shadow: 0 0 10px #000;
+}
+.btn-shake button:active{
+    transition: .25s linear;
+    transform: translate(5px,5px);
+}
+
+.dev__handle{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dev__handle img{
+    width: 400px;
+}
+.random-shake {
+    position: relative;
+}
+.random-shake .diaup{
+    position: absolute;
+    top: 0;
+
+}
+.random-shake .diaup img {
+    width:250px;
+    z-index: 11;
+    transform: translateX(-100px);
+}
+.diaup.active{
+    transition: 1s linear;
+    transform: translate(180px, 10px);
+    animation: shake .1s linear infinite ;
+    animation-delay: 1s;
+}
+.item{
+    position: absolute;
+    display: flex;
+    width: 120px;
+    flex-wrap: wrap;
+    gap:10px;   
+    justify-content: center;
+    top: 35%;
+    right: 35%;
+    }
+.item img{
+    width: 50px;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(180px, 0);
+    }
+    50% {
+        transform: translate(180px, 10px);
+    }
+    100% {
+        transform: translate(180px, -10px);
+    }
+}

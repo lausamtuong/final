@@ -15,6 +15,10 @@ const authSlice = createSlice({
         }
     },
     reducers:{
+        loginInit:(state)=>{
+            state.login.isFetching=false;
+            state.login.currentUser=null;
+        },
         loginStart:(state)=>{
             state.login.isFetching=true
         },
@@ -41,5 +45,5 @@ const authSlice = createSlice({
     }
 })
 
-export const {loginStart,loginSuccess,loginFalse,registerFalse,registerSuccess,registerStart} = authSlice.actions
+export const {loginStart,loginSuccess,loginFalse,registerFalse,registerSuccess,registerStart,loginInit} = authSlice.actions
 export default authSlice.reducer

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Main{
+    padding: 10px 20px;
+    position: relative;
+   background-image: url(../../images/bgx.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+} 
+.App .header {
+    display: flex;
+    justify-content: space-between;
+}
+.App .header .logo img{
+    width: 100px;
+    object-fit: cover;
+    box-shadow: 0 0 12px #fff;
+}
+
+
+.App .content{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+  
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+    background: rgba(0,0,0,.2);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.footer .footer_content .show_result {
+    display: flex;
+    gap:15px;
+    margin-bottom: 50px;
+
+}
+.footer .footer_content .show_result > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.footer .footer_content{
+    background-image: url(../../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    width: 70%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.logo-text {
+    position: absolute;
+    left:20%;   
+    top: 2%;
+}
+.user{
+    background-image:url(../..//images/pngwing.com.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+.user .info,.money{
+    margin-left: -60px;
+}
+.info{
+    margin-top: 10px;
+}
+.resume-btn button{
+    outline:none;
+    border:none;
+    padding:10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor:pointer;
+    margin-top: 20px;
+    border-radius: 12px;
+    background: #F62682;
+    box-shadow: 0 3px 3px #F62682;
+}
+.logout{
+    width: 200px;
+    padding-right: 50px;
+    font-size: 13px;
+    color: #fff700;
+    cursor:pointer;
+}

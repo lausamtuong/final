@@ -1,0 +1,35 @@
+.user__handle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-image: url(../../../../images/bg-user.png);
+
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 60%;
+    margin-left: 100px;
+}
+.user__handle > div{
+    width: 180px;
+    cursor: pointer;
+    position: relative;
+}
+.user__handle > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.counter{
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background: cornsilk;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 5px;
+    font-weight: 500;
+    border:3px solid #20E3B2;
+}
